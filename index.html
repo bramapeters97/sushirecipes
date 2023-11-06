@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tasty Recipes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="pagetitle" class="navbar-brand" href="index.html">SUSHI RECIPES</a>
+      </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="postbtn">
+          <li><a href="newpost.html">Post Your Recipe</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+<div class="row">
+  <div class="col-sm-12">
+  <div id="myCarousel" class="carousel slide" class="max" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <div class="carousel-caption">
+        <h3 class="caption">User Generated Recipe Database</h3>
+        <h3 class="quote">"Join the community and share your sushi recipes! Find inspiration in other's recipes, rate and share them and post your own."</h3>
+      </div>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img width="100%" src="http://harusushi.com/wp-content/uploads/2015/06/sushi_lunch.jpg">
+      </div>
+
+      <div class="item">
+        <img width="100%" src="https://www.consumentenbond.nl/binaries/content/gallery/cbhippowebsite/tests/voedingsmiddelen/afbeeldingen/sushi-nigiri-maki.jpg">
+      </div>
+
+      <div class="item">
+        <img width="100%" src="http://namasushibar.com/images/slides2014/02005.jpg">
+      </div>
+    </div>
+  </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="menutab">
+  <button id="makibutton" type="button" class="btn btn-default"><h3 class="items">MAKI ROLLS</h3></button>
+  <h3 class="items">||</h3>
+  <button id="noodlesbutton" type="button" class="btn btn-default"><h3 class="items">NOODLES</h3></button>
+  <h3 class="items">||</h3>
+  <button id="grillbutton" type="button" class="btn btn-default"><h3 class="items">GRILL</h3></button>
+</div>
+
+<div class="container" id="cardfield">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="makicardholder" class="well well-lg">
+          <img class ="cardimage" src="http://www.sakura668.com/wp-content/uploads/2016/05/SpicyTunaRoll_1280.jpg">
+          <h4 class="dishname"><b>Spicy Tuna</b></h4>
+          <p class="dishname">30 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="makicardholder" class="well well-lg">
+          <img class ="cardimage" src="https://media-cdn.tripadvisor.com/media/photo-s/09/92/c3/4c/the-sushi-bar.jpg">
+          <h4 class="dishname"><b>Unagi</b></h4>
+          <p class="dishname">35 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="grillcardholder" class="well well-lg">
+          <img class ="cardimage" src="http://rasamalaysia.com/wp-content/uploads/2014/09/teriyaki_beef3.jpg">
+          <h4 class="dishname"><b>Beef Terriyaki</b></h4>
+          <p class="dishname">45 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="noodlescardholder" class="well well-lg">
+          <img class ="cardimage" src="http://img.delicious.com.au/W2LHYnuG/h506-w759-cfill/del/2015/10/sashimi-salad-with-wasabi-passionfruit-dressing-12966-1.jpg">
+          <h4 class="dishname"><b>Sashami Salad</b></h4>
+          <p class="dishname">20 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-3">  <div class="menucard">
+        <div id="makicardholder" class="well well-lg">
+          <img class ="cardimage" src="https://www.justonecookbook.com/wp-content/uploads/2014/10/California-Roll-III-600x400.jpg">
+          <h4 class="dishname"><b>California Roll</b></h4>
+          <p class="dishname">45</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="makicardholder" class="well well-lg">
+          <img class ="cardimage" src="http://www.sushiyoshionline.com/images/sushi_menu/images/crunchy-salmon-temaki.png">
+          <h4 class="dishname"><b>Salmon Temaki</b></h4>
+          <p class="dishname">15 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="noodlescardholder" class="well well-lg">
+          <img class ="cardimage" src="http://yaguradenhaag.nl/wp-content/uploads/2016/02/102-Usuyaki-Cheese.jpg">
+          <h4 class="dishname"><b>Usuyaki Rolls</b></h4>
+          <p class="dishname">40</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="makicardholder" class="well well-lg">
+          <img class ="cardimage" src="http://sozosushi.com/images/maki_kappa.jpg">
+          <h4 class="dishname"><b>Kappa Rolls</b></h4>
+          <p class="dishname">15 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="grillcardholder" class="well well-lg">
+          <img class ="cardimage" src="http://img.taste.com.au/ViFYNWAd/w720-h480-cfill-q80/taste/2016/11/beef-stir-fry-with-quick-kimchi-95121-1.jpeg">
+          <h4 class="dishname"><b>Kimchi Beef</b></h4>
+          <p class="dishname">30 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="noodlescardholder" class="well well-lg">
+          <img class ="cardimage" src="http://ghk.h-cdn.co/assets/16/03/980x490/landscape-1453240893-ghk-0216-nutty-chicken-noodles.jpg">
+          <h4 class="dishname"><b>Chicken Noodle</b></h4>
+          <p class="dishname">35 min</p>
+          <a href="recipe.html"><div class="card">
+            <h4 class="viewbtn"><b>VIEW</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="menucard">
+        <div id="cardholder" class="well well-lg">
+          <img class ="cardimage" src="http://cdn.iflscience.com/assets/site/img/ifls-placeholder.png?v=1.2.17">
+          <h4 class="dishname"><b>Share recipe!</b></h4>
+          <p class="dishname">- - - </p>
+          <a href="newpost.html"><div class="card">
+            <h4 class="viewbtn"><b>POST</b></h4>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; SUSHI RECIPES</p>
+</div>
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
+</html>
